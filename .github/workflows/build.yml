@@ -10,12 +10,7 @@ on:
 
 env:
   itchio_api_key: ${{ secrets.ITCHIO_API_KEY }}
-  itchio_project: moomerman/odin-sokol-template-test
-
-# https://github.com/marketplace/actions/setup-odin
-# https://github.com/mymindstorm/setup-emsdk
-# https://github.com/marketplace/actions/itch-io-upload
-# https://github.com/marketplace/actions/cache-apt-packages
+  itchio_project: ${{ vars.ITCHIO_PROJECT }}
 
 jobs:
   build_linux:

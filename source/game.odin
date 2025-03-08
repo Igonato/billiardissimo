@@ -7,7 +7,7 @@ Some importants procedures:
 - game_cleanup: Called on shutdown of game, cleanup memory etc.
 
 The hot reload compiles the contents of this folder into a game DLL. A host
-application loads that DLL and calls the procedures of the DLL. 
+application loads that DLL and calls the procedures of the DLL.
 
 Special procedures that help facilitate the hot reload:
 - game_memory: Run just before a hot reload. The hot reload host application can
@@ -262,4 +262,3 @@ game_hot_reloaded :: proc(mem: rawptr) {
 game_force_restart :: proc() -> bool {
 	return force_reset
 }
-
